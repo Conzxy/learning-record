@@ -27,7 +27,7 @@ void lua_pushcfunction(lua_State *L, lua_CFunction *fn);
 栈一般是不会自己主动扩容的，需要用户根据需要进行扩容。
 一个例外是，如果函数返回多个值，会超出当前的栈大小，那么由Lua管理栈大小，保证多个返回值能够放到栈中。
 
-``C
+```C
 /**
  * \param sz Extra slots you need
  * \return
