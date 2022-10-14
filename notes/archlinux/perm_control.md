@@ -39,7 +39,7 @@ username   login-time
 ```shell
 # usermod -aG [groups] [username]
 ```
-注意，这里必须是`-aG`，表示追加，不然会离开不属于groups的组。
+> 注意，这里必须是`-aG`，表示追加，不然会离开不属于groups的组。
 
 ## 删除用户
 ```shell
