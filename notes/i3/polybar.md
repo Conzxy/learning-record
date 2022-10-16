@@ -15,3 +15,21 @@ tray-position = right
 [bar/mybar]
 bottom = true
 ```
+
+## 多显示器显示polybar
+可以参考[github issue](https://github.com/polybar/polybar/issues/763#issuecomment-331604987)。
+```shell
+# 在~/.config/polybar/mylaunch.sh中加入
+if type 'xrandr'; then
+  for m in $(xrandr --query | grep ' connected' | cut -d" " -f1); do
+    POLYBAR_MONITOR=$m polybar --reload example 1>/dev/null 2>&1 | tee -a /tmp/polybar2.log & disown
+  done
+else
+  polybar -c ~/.config/polybar/config.ini example 1>/dev/null 2>&1 | tee -a /tmp/polybar2.log & disown
+fi
+
+# 在~/.cofig/polybar/config.ini
+[bar/example]
+monitor = ${env:POLYBAR_MONITOR:}
+...
+```
