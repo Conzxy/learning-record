@@ -19,8 +19,7 @@ s_x & 0 \\
 \begin{bmatrix}
 x \\ 
 y \\
-\end{bmatrix}
-\=
+\end{bmatrix}=
 \begin{bmatrix}
 x^\prime \\ y^\prime \\
 \end{bmatrix}
@@ -37,8 +36,7 @@ $$
 \begin{bmatrix}
 x \\
 y \\
-\end{bmatrix}
-\=
+\end{bmatrix}=
 \begin{bmatrix}
 x^\prime \\
 y^\prime \\
@@ -50,8 +48,7 @@ $$
 假设R为旋转矩阵，
 
 $$
-R 
-\=
+R =
 \begin{bmatrix}
 a & b \\
 c & d \\
@@ -106,8 +103,7 @@ $$
 \begin{bmatrix}
 x{^\prime} \\
 y{^\prime}
-\end{bmatrix}
-\= 
+\end{bmatrix}= 
 \begin{bmatrix}
 1 & a \\
 0 & 1\\
@@ -131,8 +127,7 @@ $$
 \begin{bmatrix}
 x^\prime
 y^\prime
-\end{bmatrix}
-\=
+\end{bmatrix}=
 \begin{bmatrix}
 a & b \\
 c & d \\
@@ -162,8 +157,7 @@ $$
 \end{bmatrix}
 \begin{bmatrix}
 x \\ y \\ 1
-\end{bmatrix}
-\=
+\end{bmatrix}=
 \begin{bmatrix}
 x+t_x \\
 y+t_y \\
@@ -184,8 +178,7 @@ $$
 \end{bmatrix}
 \begin{bmatrix}
 x \\ y \\ 0
-\end{bmatrix}
-\=
+\end{bmatrix}=
 \begin{bmatrix}
 x \\
 y \\
@@ -214,8 +207,7 @@ $$
 \begin{bmatrix}
 x^\prime \\
 y^\prime \\
-\end{bmatrix}
-\=
+\end{bmatrix}=
 \begin{bmatrix}
 a & b \\
 c & d \\
@@ -231,8 +223,7 @@ $$
 
 ## Scale
 $$
-S(s_x, s_y) 
-\= 
+S(s_x, s_y) = 
 \begin{bmatrix}
 s_x & 0 & 0 \\
 0 & s_y & 0 \\
@@ -242,8 +233,7 @@ $$
 
 ## Rotation
 $$
-R(\theta) 
-\=
+R(\theta) =
 \begin{bmatrix}
 cos\theta & -sin\theta & 0 \\
 sin\theta & cos\theta & 0 \\
@@ -253,8 +243,7 @@ $$
 
 ## Translation
 $$
-T(t_x, t_y) 
-\=
+T(t_x, t_y) =
 \begin{bmatrix}
 1 & 0 & t_x \\
 0 & 1 & t_y \\
@@ -323,8 +312,7 @@ $$
 绕n轴旋转 $\alpha$：
 
 $$
-R(n, \alpha) 
-\= cos\alpha \cdot I + (1-cos\alpha)nn^T+sin\alpha
+R(n, \alpha) = cos\alpha \cdot I + (1-cos\alpha)nn^T+sin\alpha
 \begin{bmatrix}
 0 & -n_z & n_y \\
 n_z & 0 & -n_x \\
@@ -368,7 +356,7 @@ $$
   
   $$
   R^{-1}_{view}
-  \=
+=
   \begin{bmatrix}
   x_{g \times t} & x_t & x_g & 0\\
   y_{g \times t} & y_t & y_g & 0\\
@@ -381,7 +369,7 @@ $$
   
   $$
   R_{view}
-  \=
+=
   (R^{-1}_{view})^{-1}=(R^{-1}_{view})^T=
   \begin{bmatrix}
   x_{g \times t} & y_{g \times t} & z_{g \times t} & 0\\
@@ -453,8 +441,9 @@ $$
 第二步需要的转换矩阵已经推导过了，
 关键在于第一步的转换矩阵如何求得？
 
-通过与y轴平行的平面获取截面可以得到y的转换方程：
 ![](pic/squish.png)
+
+通过与y轴平行的平面获取截面可以得到y的转换方程：<br>
 
 $$
 y^\prime = \frac{d}{z}y
@@ -477,8 +466,7 @@ x \\
 y \\
 z \\
 1
-\end{bmatrix}
-\=
+\end{bmatrix}=
 \begin{bmatrix}
 \frac{d}{z}x \\
 \frac{d}{z}y \\
@@ -497,7 +485,7 @@ $$
 不难猜测 $M$ 具有如下形式：
 
 $$
-M \=
+M=
 \begin{bmatrix}
 d & 0 & 0 & 0 \\
 0 & d & 0 & 0 \\
@@ -517,15 +505,13 @@ x \\
 y \\
 n \\
 1 \\
-\end{bmatrix}
-\= 
+\end{bmatrix}= 
 \begin{bmatrix}
 x \\
 y \\
 n \\
 1 \\
-\end{bmatrix}
-\=
+\end{bmatrix}=
 \begin{bmatrix}
 nx \\
 ny \\
@@ -545,8 +531,7 @@ x \\
 y \\
 n \\
 1 \\
-\end{bmatrix}
-\= n^2
+\end{bmatrix}= n^2
 $$
 
 远平面同理可得：
@@ -560,8 +545,7 @@ x \\
 y \\
 f \\
 1 \\
-\end{bmatrix}
-\= f^2
+\end{bmatrix}= f^2
 $$
 
 不难解得：
@@ -576,8 +560,7 @@ $$
 所以最终，挤压转换矩阵为：
 
 $$
-M_{squish}
-\=
+M_{squish}=
 \begin{bmatrix}
 d & 0 & 0 & 0 \\
 0 & d & 0 & 0 \\
@@ -589,6 +572,37 @@ $$
 所以透视投影矩阵为：
 
 $$
-M_{pers} \= M_{ortho}M_{squish}
+\begin{align}
+M_{pers}
+&= M_{ortho}M_{squish} \\
+&= M_{scale}M_{trans}M_{squish} \\
+&= 
+\begin{bmatrix}
+\frac{2}{r-l} & 0 & 0 & 0 \\
+0 & \frac{2}{t-b} & 0 & 0 \\
+0 & 0 & \frac{2}{n-f} & 0 \\
+0 & 0 & 0 & 1 \\
+\end{bmatrix}
+\begin{bmatrix}
+1 & 0 & 0 & -\frac{l+r}{2} \\
+0 & 1 & 0 & -\frac{b+t}{2} \\
+0 & 0& 1 & -\frac{n+f}{2} \\
+0 & 0 & 0 & 1 \\
+\end{bmatrix}
+\begin{bmatrix}
+n & 0 &0 & 0 \\
+0 & n & 0 & 0 \\
+0 & 0 & n+f & -nf \\
+0 & 0 & 1 & 0 \\
+\end{bmatrix} \\
+&=
+\begin{bmatrix}
+\frac{2n}{r-l} & 0 & -\frac{l+r}{r-l} & 0 \\
+0 & \frac{2n}{t-n} & -\frac{b+t}{t-b} & 0 \\
+0 & 0 & \frac{n+f}{n-f} & -\frac{2nf}{n-f} \\
+0 & 0 & 1 & 0 \\
+\end{bmatrix}
+\end{align}
 $$
 
+> 实际编程中，不需要每次都列出三个中间矩阵，直接用最后一个结果矩阵即可。
