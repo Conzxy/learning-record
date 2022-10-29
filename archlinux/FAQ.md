@@ -93,3 +93,8 @@ $ xrandr --output [] --mode 1920x1080
 $ xrandr --output [] --dpi 96
 ```
 
+# 腾讯会议共享屏幕亮度低
+设置`picom.conf`：
+```
+frame-opacity = 0.1
+```
