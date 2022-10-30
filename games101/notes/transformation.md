@@ -355,8 +355,7 @@ $$
   **反向思维** ：反向旋转得到逆矩阵，再反转回来。
   
   $$
-  R^{-1}_{view}
-=
+  R^{-1}_{view}=
   \begin{bmatrix}
   x_{g \times t} & x_t & x_g & 0\\
   y_{g \times t} & y_t & y_g & 0\\
@@ -365,11 +364,10 @@ $$
   \end{bmatrix}
   $$
   
-  由于是正交基，假设都为单位向量，那么 $Q^TQ=I$，进而 $Q^{-1}=QT$。
+  由于是正交基，假设都为单位向量，那么 $Q^TQ=I$ ，进而 $Q^{-1}=QT$。
   
   $$
-  R_{view}
-=
+  R_{view}=
   (R^{-1}_{view})^{-1}=(R^{-1}_{view})^T=
   \begin{bmatrix}
   x_{g \times t} & y_{g \times t} & z_{g \times t} & 0\\
