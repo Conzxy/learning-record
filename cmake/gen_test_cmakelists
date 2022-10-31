@@ -33,18 +33,19 @@ macro (GenTest SRC)
 
     if (${{BUILD_ALL_TESTS}})
       add_executable(${{{0}_test_filename}} ${{{0}_test_source}})
-        target_link_libraries(${{{0}_test_filename}} ${{ARGN}})
-        set_target_properties(${{{0}_test_filename}}
-          PROPERTIES
-          RUNTIME_OUTPUT_DIRECTORY "${{CMAKE_BINARY_DIR}}/test"
-          COMMAND ${{{0}_test_filename}}
-        )
-
-        add_test(NAME ${{{0}_test_filename}} COMMAND ${{{0}_test_filename}})
     else ()
       message(STATUS "${{{0}_test_filename}} is excluded from target all")
       add_executable(${{{0}_test_filename}} EXCLUDE_FROM_ALL ${{{0}_test_source}})
     endif (${{BUILD_ALL_TESTS}})
+
+    target_link_libraries(${{{0}_test_filename}} ${{ARGN}})
+    set_target_properties(${{{0}_test_filename}}
+      PROPERTIES
+      RUNTIME_OUTPUT_DIRECTORY "${{CMAKE_BINARY_DIR}}/test"
+      COMMAND ${{{0}_test_filename}}
+    )
+
+    add_test(NAME ${{{0}_test_filename}} COMMAND ${{{0}_test_filename}})
   endforeach ({0}_test_source ${{{1}_TEST_SOURCES}})
 endmacro()
 
