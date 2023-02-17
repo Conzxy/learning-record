@@ -1,0 +1,21 @@
+set foldenable
+set ignorecase		" Do case insensitive matching
+set incsearch		" Incremental search
+set hlsearch
+set autochdir
+
+set number
+set relativenumber
+
+set smartindent
+set cursorline
+
+let mapleader = " "
+nnoremap <cr> o<ESC>
+nnoremap <m-s> i<space><esc>
+" normal no recursion remap
+nnoremap <silent> <C-l> :<C-u>nohlsearch<cr><C-l>
+nnoremap k gkzz
+nnoremap gk kzz
+nnoremap j gjzz
+nnoremap gj jzz
