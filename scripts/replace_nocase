@@ -1,0 +1,18 @@
+#!/bin/python3
+from sys import *
+import subprocess
+
+if len(argv) < 4:
+    print("Usage: {} old_text new_text files...".format(argv[0]))
+    exit(1)
+
+old_text = argv[1]
+new_text = argv[2]
+up_old_text=argv[1].upper()
+up_new_text=argv[2].upper()
+
+replace_cmd_fmt="sed -i 's/{}/{}/g' {}"
+for i in range(3, len(argv)):
+    file = argv[i]
+    subprocess.call(replace_cmd_fmt.format(old_text, new_text, file), shell=True)
+    subprocess.call(replace_cmd_fmt.format(up_old_text, up_new_text, file), shell=True)
