@@ -4,7 +4,11 @@ endif
 
 set foldenable
 set backspace=indent,eol,start
-" set background=dark
+"set runtimepath=$VIMRUNTIME,"~\.vim","D:\.vim\plugin"
+"set packpath=$VIMRUNTIME,"~\.vim","D:\.vim\plugin"
+"set runtimepath+="D:\.vim"
+"set packpath+="D:\.vim"
+set background=dark
 "set showcmd		" Show (partial) command in status line.
 "set showmatch		" Show matching brackets.
 set ignorecase		" Do case insensitive matching
@@ -35,8 +39,8 @@ let mapleader = " "
 
 call plug#begin('~/.vim/plugged')
 Plug 'nvim-tree/nvim-web-devicons'
-Plug 'nvim-tree/nvim-tree.lua'
-Plug 'romgrk/barbar.nvim'
+"Plug 'nvim-tree/nvim-tree.lua'
+"Plug 'romgrk/barbar.nvim'
 Plug 'skywind3000/vim-terminal-help'
 Plug 'navarasu/onedark.nvim'
 Plug 'jiangmiao/auto-pairs'
