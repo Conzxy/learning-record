@@ -37,3 +37,5 @@ FIX：reverse()用错了变量导致内存泄露
 * [ ] 性能测试：echo，与muduo
 * [ ] connector（win），channel移动
 * [ ] inetaddr * parse
+* [ ] inetaddr抛出异常是否OK？ 
+* [ ] ChunkList AppendChunkList test case

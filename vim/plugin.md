@@ -1,4 +1,3 @@
-# 插件
 ## gutentags_plus
 韦易笑推荐的一个插件（也是他自己整合的）。
 ```vim
@@ -6,9 +5,14 @@ Plug 'skywind3000/gutentags_plus'
 Plug 'ludovicchabant/vim-gutentags' " 必须一起装上，本质上来说服务是由它提供的
 ```
 除此之外，我的`.vimrc`应该用的是`gtags`，gtags比`ctags`更好用，因此采用它是没大问题的。
+这个也是和`vim-preview`搭配必需的一个插件。
 可以去[gtags 官网](https://www.gnu.org/software/global/)下载
 
-同时，这个也是和`vim-preview`搭配必需的一个插件。
+### global
+> 注意：有些版本可能编译失败，比如 `6.6.2` 我就失败了，可以选择 `6.6.9` （目前）
+
+编译完后记得将根目录的 `*.vim` 拷贝/移动到 `~/.vim/plugin/` 下
+
 
 > 以下复制于 https://github.com/skywind3000/gutentags_plus/blob/master/README.md
 ### Command
@@ -44,7 +48,7 @@ Perform a cscope search and take care of database switching before searching.
 | `<leader>ct` | Find text string under cursor |
 | `<leader>ce` | Find egrep pattern under cursor |
 | `<leader>cf` | Find file name under cursor |
-| `<leader>ci` | Find files #including the file name under cursor |
+| `<leader>ci` | Find files \#including the file name under cursor |
 | `<leader>ca` | Find places where current symbol is assigned |
 | `<leader>cz` | Find current word in ctags database |
 
@@ -124,7 +128,7 @@ require("nvim-tree").setup()
 
 -- OR setup with some options
 require("nvim-tree").setup({
-  open_on_setup_file = false,
+  -- open_on_setup_file = false, 已不支持
   sort_by = "name",
   view = {
     adaptive_size = false,
@@ -195,6 +199,9 @@ nnoremap <silent> <Space>bw <Cmd>BufferOrderByWindowNumber<CR>
 " :BarbarDisable - very bad command, should never be used
 ```
 
+### Jump-to-tab
+这个模式又称 `BufferPick` （Ctrl+j )模式，进入这个模式后，每个tab会显示它的提示key，敲击这个key就会跳转到对于的tab。
+
 ## vista
 ```vim
 Plug 'liuchengxu/vista.vim'
@@ -208,3 +215,35 @@ Plug 'liuchengxu/vista.vim'
 Plug 'Yggdroot/indentLine'
 ```
 其实对于我来说不是很必要...
+
+
+## Coc.nvim
+> 注意：此插件亦可用于vim
+
+打开配置文件命令：`:CocConfig`
+
+### LSP相关
+#### cpp
+
+- 直接`:CocInstall coc-clangd`
+- 配置`clangd`路径
+```json
+"languageserver": {
+  "clangd": {
+    "command": "clangd",
+    "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
+    "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
+  }
+}
+```
+### Tab补全默认跳过第一项
+```json
+{
+[...]
+	"suggest.enablePreselect": false,
+    "suggest.noselect": true
+[...]
+}
+```
+## 
+

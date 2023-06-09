@@ -9,3 +9,6 @@ Vscode的折腾记录
 
 ## 设置窗口透明
 参考`archlinux/FAQ.md`
+
+## 关闭右边的缩小全局滚动图
+设置里找minimap并关闭

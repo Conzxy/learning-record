@@ -13,3 +13,11 @@ zip [archive name] files...
 unzip [archive name] -d [directory]
 ```
 如果不指定目录，那么默认解压到当前目录。
+
+## 解压乱码问题
+由于unzip并不能指定编码，因此这里可以采用其他压缩软件解决。
+```bash
+# pacman -S unarchiver
+$ unar --help
+```
+除此之外，还可以用其他方式，参考[该帖](https://tieba.baidu.com/p/4095309703?red_tag=1067663638)，不过我没尝试。
