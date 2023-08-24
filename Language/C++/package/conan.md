@@ -17,12 +17,15 @@ conan也提供了一个[远程包管理中心](https://conan.io/center/)，里�
 自用的canon recipe我都放到了[github](https://github.com/Conzxy/conan-recipe)上，包括安装包、消费包和编写包。
 因此这里不赘述。
 
+# 坑
+* 对于编辑模式的包，`conan install`使用的options是无效的，它会采用编辑模式包`conan create`时用的options
+
 # FAQ
 * 能否缓存二进制中间文件
 缓存二进制中间文件，可以避免全量编译
 
 * 是否采用自己生成的XXXConfig.cmake
-conan这套机制不好搞，还是老老实实写package_info()为好，结合install和components.requires可以实现依赖传递。
+可以，参考我自己的模板文件
 
 * 如果将自己生成的config提供给consumer使用
 禁用conan的config生成，并将config在package folder中的路径加入到`CMAKE_MODULE_PATH`中。

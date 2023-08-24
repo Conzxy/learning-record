@@ -1,7 +1,7 @@
 # Virtual function VS Function Pointer
 > [https://stackoverflow.com/questions/17959246/virtual-function-vs-function-pointer-performance](https://stackoverflow.com/questions/17959246/virtual-function-vs-function-pointer-performance)
 
-本质上该问题与**“Virtual function与回调函数的区别”**等价。
+本质上该问题与 **“Virtual function与回调函数的区别”** 等价。
 先来考虑下performance的影响：
 
 - 调用不频繁，影响几乎可以不计（在现代编译器来看）
