@@ -1,7 +1,6 @@
 {
   "vimMode": true,
   "attachmentFolderPath": "./attachments",
-  "userIgnoreFilters": null,
-  "livePreview": true,
+  "showLineNumber": true,
   "readableLineLength": false
 }

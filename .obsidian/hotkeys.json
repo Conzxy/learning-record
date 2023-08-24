@@ -1,1 +1,75 @@
-{}
+{
+  "global-search:open": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "F"
+    },
+    {
+      "modifiers": [],
+      "key": "F2"
+    }
+  ],
+  "workspace:edit-file-title": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "R"
+    }
+  ],
+  "app:open-settings": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": ","
+    },
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "S"
+    }
+  ],
+  "file-explorer:open": [
+    {
+      "modifiers": [],
+      "key": "F1"
+    }
+  ],
+  "app:open-help": [],
+  "bookmarks:open": [
+    {
+      "modifiers": [],
+      "key": "F3"
+    }
+  ],
+  "backlink:open": [
+    {
+      "modifiers": [],
+      "key": "F5"
+    }
+  ],
+  "outgoing-links:open": [
+    {
+      "modifiers": [],
+      "key": "F6"
+    }
+  ],
+  "obsidian-quiet-outline:quiet-outline": [
+    {
+      "modifiers": [],
+      "key": "F8"
+    }
+  ],
+  "tag-pane:open": [
+    {
+      "modifiers": [],
+      "key": "F7"
+    }
+  ]
+}
