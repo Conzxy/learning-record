@@ -98,3 +98,11 @@ $ xrandr --output [] --dpi 96
 ```
 frame-opacity = 0.1
 ```
+
+# ArchLinux Icon存放路径
+https://archlinux.org/art/
+```shell
+$ pacman -Ql archlinux-artwork
+```
+具体路径为:
+`/usr/share/archlinux/icons/`
