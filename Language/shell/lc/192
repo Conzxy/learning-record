@@ -1,0 +1,16 @@
+#!/bin/bash
+echo 'the day is sunny the the
+the sunny is is'> 192.txt
+
+awk '
+{
+  for (i=1;i<=NF;++i)
+    words[$i] += 1   
+}
+END {
+  for (w in words) {
+    print words[w]" "w" "words[w]
+  }
+}' 192.txt | sort -n -r | awk '{ print $2" "$3 }'
+
+rm 192.txt
