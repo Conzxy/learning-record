@@ -13,9 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< Updated upstream
                 "file": "Math/数学分析/Real number system.md",
                 "mode": "preview",
                 "source": true
+=======
+                "file": "archlinux/AMD显卡.md",
+                "mode": "source",
+                "source": false
+>>>>>>> Stashed changes
               }
             }
           }
@@ -86,7 +92,11 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< Updated upstream
                 "file": "Math/数学分析/Real number system.md",
+=======
+                "file": "archlinux/AMD显卡.md",
+>>>>>>> Stashed changes
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +113,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< Updated upstream
                 "file": "Math/数学分析/Real number system.md",
+=======
+                "file": "archlinux/AMD显卡.md",
+>>>>>>> Stashed changes
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,11 @@
             "state": {
               "type": "outline",
               "state": {
+<<<<<<< Updated upstream
                 "file": "Math/数学分析/Real number system.md"
+=======
+                "file": "archlinux/AMD显卡.md"
+>>>>>>> Stashed changes
               }
             }
           },
@@ -155,6 +173,7 @@
       "command-palette:打开命令面板": false
     }
   },
+<<<<<<< Updated upstream
   "active": "4cf1a233b86d86ad",
   "lastOpenFiles": [
     "Windows/IOCP( IO Completion Ports).md",
@@ -166,6 +185,15 @@
     "Language/C++/windows/windbg.md",
     "Math/数学分析",
     "Math",
+=======
+  "active": "61cd5c90df9d1b8c",
+  "lastOpenFiles": [
+    "archlinux/coredumpctl.md",
+    "archlinux/AMD显卡.md",
+    "翻墙/clash.md",
+    "工作相关/鼠标事件重建.md",
+    "工作相关/材质节点(参数, 属性).md",
+>>>>>>> Stashed changes
     "CG/games101/notes/geometry.md",
     "工作相关/Launcher/KeyboardMonitor.md",
     "Language/C++/库的编写.md",
@@ -176,6 +204,7 @@
     "工作相关/笔刷预设应用材质.md",
     "工作相关/Windows Snap Aero.md",
     "工作相关/添加新的材质节点.md",
+<<<<<<< Updated upstream
     "Windows/App URI Scheme.md",
     "工作相关/同步模型/D5MeshSync.md",
     "Qt/FAQ.md",
@@ -202,5 +231,46 @@
     "工作相关/d5_immerse/attachments/Pasted image 20231103140011.png",
     "工作相关/d5_immerse/attachments",
     "工作相关/d5_immerse"
+=======
+    "Linux/APUE/daemon/service_unit.md",
+    "Linux/APUE/daemon/README.md",
+    "CG/games101/notes/rasterization.md",
+    "CG/games101/notes/lec1.md",
+    "CG/games101/notes/raytracing.md",
+    "archlinux/i3/polybar.md",
+    "archlinux/oh-my-posh/oh-my-posh.md",
+    "archlinux/i3/config.md",
+    "CG/games101/notes/transformation.md",
+    "Language/english/new_concept_english/lesson6.md",
+    "Language/cmake/CMake Notes.md",
+    "Toolbox/IDE/VS/Visual Studio插件.md",
+    "Toolbox/IDE/VS/Visual Studio设置.md",
+    "Toolbox/git/建新空分支.md",
+    "Toolbox/IDE/VS/attachments/Pasted image 20230714133321.png",
+    "Toolbox/IDE/VS/attachments/Pasted image 20230714133251.png",
+    "Toolbox/IDE/VS/attachments",
+    "Toolbox/IDE/VS/新建文件夹",
+    "Toolbox/IDE/VS/Pasted image 20230714133321.png",
+    "Toolbox/IDE/VS/Pasted image 20230714133251.png",
+    "Toolbox/IDE/Pasted image 20230714133321.png",
+    "Toolbox/IDE/Pasted image 20230714133251.png",
+    "Pasted image 20230714133251.png",
+    "Pasted image 20230714133321.png",
+    "mit/py6001/lec1/lec.pdf",
+    "Toolbox/clangd/Configuration.md",
+    "Toolbox/clangd",
+    "archlinux/wine/FAQ.md",
+    "archlinux/wine",
+    "Toolbox/vim/Plugin Manager.md",
+    "Toolbox/vim/Nvim Workspace.md",
+    "Toolbox/vim/plugin.md",
+    "Toolbox/vim",
+    "Toolbox/git",
+    "Toolbox/IDE/VS",
+    "Toolbox/IDE/vscode",
+    "Toolbox/IDE",
+    "CG/games101/notes/pic/squish.png",
+    "CG/games101/notes/pic/shear.png"
+>>>>>>> Stashed changes
   ]
 }
