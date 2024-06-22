@@ -1,0 +1,19 @@
+.callout[data-callout="statement"] {
+    --callout-color: 243, 75, 125;
+    --callout-icon: lucide-pencil-ruler;
+}
+
+.callout[data-callout="proof"] {
+    --callout-color: 16, 104, 191;
+    --callout-icon: lucide-paperclip;
+}
+
+.callout[data-callout="idea"] {
+    --callout-color: 221, 94, 56;
+    --callout-icon: lucide-siren;
+}
+
+.callout[data-callout="think"] {
+    --callout-color: 122, 201, 171;
+    --callout-icon: lucide-lightbulb;
+}

@@ -1,4 +1,9 @@
 {
-  "cssTheme": "Obsidian gruvbox",
-  "accentColor": "#da8c07"
+  "cssTheme": "",
+  "accentColor": "#da8c07",
+  "baseFontSize": 19,
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "callouts"
+  ]
 }

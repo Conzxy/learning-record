@@ -1,6 +1,8 @@
 [
-  "any-block",
-  "obsidian-style-settings",
   "obsidian-quiet-outline",
-  "image-captions"
+  "image-captions",
+  "any-block",
+  "obsidian-dynamic-background",
+  "obsidian-style-settings",
+  "quick-latex"
 ]
